@@ -62,6 +62,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003262237485_AddStatusToDB.cs" />
+    <Compile Include="Migrations\202003262237485_AddStatusToDB.designer.cs">
+      <DependentUpon>202003262237485_AddStatusToDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Status.cs" />
     <Compile Include="Model\tmDBContext.cs" />
@@ -69,6 +73,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003262237485_AddStatusToDB.resx">
+      <DependentUpon>202003262237485_AddStatusToDB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
