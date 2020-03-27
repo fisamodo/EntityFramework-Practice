@@ -70,8 +70,13 @@
     <Compile Include="Migrations\202003262244258_AddStatusSeedDataToDB.designer.cs">
       <DependentUpon>202003262244258_AddStatusSeedDataToDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003271113576_AddTaskToDB.cs" />
+    <Compile Include="Migrations\202003271113576_AddTaskToDB.designer.cs">
+      <DependentUpon>202003271113576_AddTaskToDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Status.cs" />
+    <Compile Include="Model\Task.cs" />
     <Compile Include="Model\tmDBContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202003262244258_AddStatusSeedDataToDB.resx">
       <DependentUpon>202003262244258_AddStatusSeedDataToDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003271113576_AddTaskToDB.resx">
+      <DependentUpon>202003271113576_AddTaskToDB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
