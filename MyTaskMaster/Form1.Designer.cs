@@ -122,6 +122,7 @@
             this.cmdDeleteTask.TabIndex = 5;
             this.cmdDeleteTask.Text = "Delete";
             this.cmdDeleteTask.UseVisualStyleBackColor = true;
+            this.cmdDeleteTask.Click += new System.EventHandler(this.cmdDeleteTask_Click);
             // 
             // cmdUpdateTask
             // 
@@ -131,6 +132,7 @@
             this.cmdUpdateTask.TabIndex = 4;
             this.cmdUpdateTask.Text = "Update";
             this.cmdUpdateTask.UseVisualStyleBackColor = true;
+            this.cmdUpdateTask.Click += new System.EventHandler(this.cmdUpdateTask_Click);
             // 
             // cmdCreateTask
             // 

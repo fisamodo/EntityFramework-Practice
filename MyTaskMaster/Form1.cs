@@ -65,5 +65,44 @@ namespace MyTaskMaster
                 MessageBox.Show("Please make sure all data has been entered");
             }
         }
+
+        private void cmdDeleteTask_Click(object sender, EventArgs e)
+        {
+            var t = tmContext.Tasks.Find((int)dataGridView1.SelectedCells[0].Value);
+            tmContext.Tasks.Remove(t);
+            tmContext.SaveChanges();
+            refreshData();
+        }
+
+        private void cmdUpdateTask_Click(object sender, EventArgs e)
+        {
+            if(cmdUpdateTask.Text == "Update")
+            {
+                txtTask.Text = dataGridView1.SelectedCells[1].Value.ToString();
+                dateTimePicker1.Value = (DateTime) dataGridView1.SelectedCells[3].Value;
+                foreach(Status s in cboStatus.Items)
+                {
+                    if(s.Name == dataGridView1.SelectedCells[2].Value.ToString())
+                    {
+                        cboStatus.SelectedItem = s;
+                    }
+                }
+                cmdUpdateTask.Text = "Save";
+            }
+            else if(cmdUpdateTask.Text == "Save")
+            {
+                var t = tmContext.Tasks.Find((int)dataGridView1.SelectedCells[0].Value);
+                t.Name = txtTask.Text;
+                t.StatusId=(cboStatus.SelectedItem as Status).Id;
+                t.DueDate = dateTimePicker1.Value;
+                tmContext.SaveChanges();
+                refreshData();
+
+                cmdUpdateTask.Text = "Update";
+                txtTask.Text = string.Empty;
+                dateTimePicker1.Value = DateTime.Now;
+                cboStatus.Text = "Please Select...";
+            }
+        }
     }
 }
