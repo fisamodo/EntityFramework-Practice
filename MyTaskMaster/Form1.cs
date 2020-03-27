@@ -104,5 +104,13 @@ namespace MyTaskMaster
                 cboStatus.Text = "Please Select...";
             }
         }
+
+        private void cmdCancel_Click(object sender, EventArgs e)
+        {
+            cmdUpdateTask.Text = "Update";
+            txtTask.Text = string.Empty;
+            dateTimePicker1.Value = DateTime.Now;
+            cboStatus.Text = "Please Select...";
+        }
     }
 }
