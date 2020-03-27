@@ -30,16 +30,16 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.cmdCancel = new System.Windows.Forms.Button();
             this.cmdDeleteTask = new System.Windows.Forms.Button();
             this.cmdUpdateTask = new System.Windows.Forms.Button();
             this.cmdCreateTask = new System.Windows.Forms.Button();
-            this.cboStatus = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.txtTask = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.cboStatus = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -61,6 +61,7 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.cboStatus);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -68,7 +69,6 @@
             this.groupBox1.Controls.Add(this.cmdDeleteTask);
             this.groupBox1.Controls.Add(this.cmdUpdateTask);
             this.groupBox1.Controls.Add(this.cmdCreateTask);
-            this.groupBox1.Controls.Add(this.cboStatus);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.txtTask);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -77,6 +77,33 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Task";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(304, 23);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Due Date:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(44, 52);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Status:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(44, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Task:";
             // 
             // cmdCancel
             // 
@@ -114,13 +141,6 @@
             this.cmdCreateTask.Text = "Create";
             this.cmdCreateTask.UseVisualStyleBackColor = true;
             // 
-            // cboStatus
-            // 
-            this.cboStatus.Location = new System.Drawing.Point(103, 47);
-            this.cboStatus.Name = "cboStatus";
-            this.cboStatus.Size = new System.Drawing.Size(79, 20);
-            this.cboStatus.TabIndex = 2;
-            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -136,32 +156,13 @@
             this.txtTask.Size = new System.Drawing.Size(170, 20);
             this.txtTask.TabIndex = 0;
             // 
-            // label1
+            // cboStatus
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Task:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Status:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(304, 23);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Due Date:";
+            this.cboStatus.FormattingEnabled = true;
+            this.cboStatus.Location = new System.Drawing.Point(103, 46);
+            this.cboStatus.Name = "cboStatus";
+            this.cboStatus.Size = new System.Drawing.Size(85, 21);
+            this.cboStatus.TabIndex = 10;
             // 
             // Form1
             // 
@@ -188,12 +189,12 @@
         private System.Windows.Forms.Button cmdDeleteTask;
         private System.Windows.Forms.Button cmdUpdateTask;
         private System.Windows.Forms.Button cmdCreateTask;
-        private System.Windows.Forms.TextBox cboStatus;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox txtTask;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cboStatus;
     }
 }
 
