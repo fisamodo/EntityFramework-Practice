@@ -140,6 +140,7 @@
             this.cmdCreateTask.TabIndex = 3;
             this.cmdCreateTask.Text = "Create";
             this.cmdCreateTask.UseVisualStyleBackColor = true;
+            this.cmdCreateTask.Click += new System.EventHandler(this.cmdCreateTask_Click);
             // 
             // dateTimePicker1
             // 
